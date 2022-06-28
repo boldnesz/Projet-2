@@ -1,0 +1,400 @@
+* {
+  box-sizing: border-box;
+}
+
+.content {
+    margin: 0% 10%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* navigation bar */
+.nav-bar {
+  display: flex;
+  padding-top: 37px;
+}
+
+.site-logo {
+  width: auto;
+  height: 50px;
+  margin-left: 10px;
+}
+
+.nav-bar-menu {
+  margin-left: auto;
+}
+
+.lien-nav-bar {
+    font-size: 17px;
+    padding: 34px 15px;
+    color: black;
+}
+
+.lien-nav-bar:hover {
+  border-top: 6px solid #0065FC;
+  color: #0065FC;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.flex-container {
+  display: flex;
+}
+
+/* search bar */
+.search-bar {
+  padding-bottom: 12px;
+}
+.search-bar-flexbox {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.map-logo {
+  padding: 12px;
+  background-color: #F2F2F2;
+  border-radius: 12px 0 0 12px;
+}
+
+input[type=text], select, textarea {
+  padding: 12px;
+  border: 1px solid #F2F2F2;
+}
+
+input[type=submit] {
+  background-color: #0065FC;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 0 12px 12px 0;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #0082fc;
+}
+
+/* filtre recherche */
+
+.search-filter {
+  padding: 15px 0;
+}
+
+.flex-search-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.search-filter-container {
+  border: 3px solid #F2F2F2;
+  border-radius: 50px;
+  padding: 0px 20px 0 0;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 2px 5px 0 5px;
+  position: relative;
+  height: 44px;
+}
+
+.search-filter-container:hover {
+  border: 3px solid #0082fc;
+}
+
+.search-filt-element {
+  color: black;
+  text-align: center;
+}
+
+.filter-title {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.word-filter {
+  margin: 0;
+  position: relative;
+  left: -5px;
+  top: -4px;
+}
+
+.logo-size-correction {
+  color: #0082fc;
+  background-color: #dbe9f4;
+  padding: 15px 17px;
+  border-radius: 100%;
+  margin-right: 5px;
+}
+
+.logo-filter {
+ color: #0082fc;
+ background-color: #dbe9f4;
+ padding: 15px 15px;
+ border-radius: 100%;
+ margin-right: 5px;
+}
+
+.i-logo {
+  color: #0082fc;
+  border: 2px solid #F2F2F2;
+  border-radius: 100%;
+  padding: 0px 7px;
+  margin: 0 5px 0 0;
+}
+
+/* Center website */
+.flexbox-1 {
+  flex: 0 0 66%;
+  border-radius: 25px;
+  background-color: #F2F2F2;
+  padding: 5px 16px;
+  margin: 5px;
+}
+
+.flexbox-2 {
+  background-color: #F2F2F2;
+  flex: auto;
+  border-radius: 25px;
+  padding: 5px 16px;
+  margin: 5px;
+}
+
+.flex-container-2-extrems {
+  display: flex;
+  justify-content: space-between;
+}
+
+.black-star {
+  padding-top: 28px;
+}
+
+
+h1 {
+  font-size: 30px;
+}
+
+.titre-bloc {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 3px;
+}
+
+.prix-nuit {
+  font-size: 15px;
+  margin: 3px;
+}
+
+.afficher-plus {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* activités marseille */
+.titre-activites-mars {
+  margin-top: 5%;
+}
+
+.activites-marseille {
+  width: 100%;
+  margin: 5px;
+}
+
+.activites-marseille p {
+  font-size: 13px;
+  font-weight: bold;
+  margin: 0;
+  padding: 13px 0 13px 10px;
+  border-radius: 0 0 25px 25px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 0px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.gallery {
+  display: grid;
+}
+
+figure {
+  margin: 5px;
+}
+
+.gallery__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 25px 25px 0 0;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 0px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.gallery__item {
+  margin-bottom: 55px;
+}
+
+.gallery__item--1 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--2 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 5;
+
+  /** Alternative Syntax **/
+  /* grid-column: 3 / span 2;  */
+  /* grid-row: 1 / span 2; */
+}
+
+.gallery__item--3 {
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 5;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4;
+  grid-row: 1 / span 5; */
+}
+
+.gallery__item--4 {
+  grid-column-start: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4;  */
+  /* grid-row: 3 / span 3; */
+}
+
+.gallery__item--5 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 4;
+
+  /** Alternative Syntax **/
+  /* grid-column: 1 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.gallery__item--6 {
+  grid-column-start: 7;
+  grid-column-end: 9;
+  grid-row-start: 4;
+  grid-row-end: 9;
+
+  /** Alternative Syntax **/
+  /* grid-column: 5 / span 4; */
+  /* grid-row: 6 / span 3; */
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+.row,
+.row > .column-pop {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content-mars {
+  background-color: #fff;
+  padding: 2px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 0px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.content-pop {
+  display: flex;
+  background-color: #fff;
+  border-radius: 25px;
+  padding: 2px;
+  box-shadow: 0px 0px 0px 0px rgb(0 0 0 / 0%), 0 0px 10px 0 rgb(0 0 0 / 20%);
+}
+
+/* modifications images */
+.image-appartement {
+  border-radius: 25px 25px 0px 0px;
+  width: 100%;
+}
+
+.image-pop {
+  border-radius: 25px 0px 0px 25px;
+  width: 100%;
+  height: 100%;
+}
+
+.content-pop-column {
+  width: 50%;
+}
+
+.text-image-side {
+  width: 50%;
+}
+
+/* notations étoiles */
+.blue-star {
+  color: #0065FC;
+}
+
+.grey-star {
+  color: #F2F2F2;
+}
+
+.stars-heb-mars {
+  margin: 3px;
+}
+
+/* Footer */
+.flex-container-footer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #F2F2F2;
+  margin-top: 20px;
+}
+
+.flex-container-footer > div {
+  margin: 4% 7%;
+}
+
+.colum-title {
+    font-weight: bold;
+}

@@ -1,0 +1,115 @@
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 768px) {
+  .content {
+    margin: 0;
+}
+
+.filter-title {
+  width: 100%;
+}
+
+.mobile-size-title {
+  font-size: 18px;
+}
+
+.padding-correc-h2 {
+  padding-left: 13px;
+}
+
+.sous-titre {
+  font-size: 14px;
+}
+
+.mobile-sizing {
+  margin: 0% 5%;
+}
+
+.flexbox-1 {
+  background-color: white;
+  margin: 0;
+}
+
+.flexbox-2 {
+  margin: 0;
+  border-radius: 0;
+}
+
+.column {
+  width: 100%;
+}
+
+.flex-container {
+  flex-direction: column-reverse;
+}
+
+.search-bar-flexbox {
+  display: flex;
+}
+
+.search-bar-row-2 {
+  width: 54%;
+}
+
+.search-bar-row-3 {
+  display: none;
+}
+
+.search-bar-row-4 {
+  display: block;
+  padding: 12px 15px;
+  background-color: #0065FC;
+  border-radius: 10px;
+  color: white;
+}
+
+  input[type=text], select, textarea {
+  padding: 12px;
+  border: 1px solid #F2F2F2;
+  width: 110%;
+  }
+
+/* navigation bar */
+.nav-bar {
+  display: block;
+}
+
+.site-logo {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.nav-bar-menu {
+  display: flex;
+}
+
+.lien-nav-bar {
+  width: 50%;
+  border-bottom: 3px solid #F2F2F2;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+.lien-nav-bar:hover {
+  border-top: none;
+  border-bottom: 3px solid #0065FC;
+}
+
+.gallery {
+    display: block;
+}
+
+.activites-marseille {
+  margin: 0;
+  padding: 8px;
+}
+
+figure {
+  height: 180px;
+}
+
+.flex-container-footer {
+  font-size: 16px;
+}
+
+}
